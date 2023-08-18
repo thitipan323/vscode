@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orenge Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="lab06.css">
+    <script src="lab06.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+  <body>
+    <header>
+        <nav class="naver container">
+            <div class="logo">
+                <div class="img"><img src="oshop.png" width="90"></div>
+                <h1>ORENGE SHOP</h1>
+                
+            </div> 
+
+            
+            <ul class="nav_menu">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                
+            </ul>
+            
+            
+        </nav>
+    </header>
+
+   
+
+    <section class="sec">
+        
+        <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="5.jpg" alt="Image 1">
+              </div>
+              <div class="slide">
+                <img src="6.jpg" alt="Image 2">
+              </div>
+              <div class="slide">
+                <img src="7.jpg" alt="Image 3">
+              </div>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <div class="control" onclick="prevSlide()">Previous</div>
+            <div class="control" onclick="nextSlide()">Next</div>
+          </div>
+        
+        
+        
+
+        
+        <div class="products">
+            
+            <div class="card">
+                <div class="img"><img src="1.jpg" alt="" ></div>
+                <div class="desc">หม้อทอดไร้น้ำมัน</div>
+                <div class="title">SONAR Air Fryer(ความจุ 4 ลิตร)</div>
+                <div class="box">
+                    <button class="btn" onclick="addFunction(780)">ADD TO CART</button>
+                    <span class="price">780฿</span>
+                    <button class="btn" onclick="addFunction(-780)">Remove</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="2.jpg" alt=""></div>
+                <div class="desc"> เครื่องฟอกอากาศ</div>
+                <div class="title">Smart Home Air Purifier เครื่องฟอกอากาศ </div>
+                <div class="box">
+                    <button class="btn" onclick="addFunction(2190)">ADD TO CART</button>
+                    <span class="price">2190฿</span>
+                    <button class="btn" onclick="addFunction(-2190)">Remove</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="3.jpg" alt=""></div>
+                <div class="desc">หุ่นยนต์ดูดฝุ่นอัจฉริยะ</div>
+                <div class="title">Asaki Robot Vacuum Cleaner หุ่นยนต์ดูดฝุ่นอัจฉริยะ</div>
+                <div class="box">
+                    <button class="btn" onclick="addFunction(1290)">ADD TO CART</button>
+                    <span class="price">1290฿</span>
+                    <button class="btn" onclick="addFunction(-1290)">Remove</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="4.jpg" alt=""></div>
+                <div class="desc">เตาแม่เหล็กไฟฟ้า</div>
+                <div class="title">HOUSE WORTH เตาแม่เหล็กไฟฟ้า </div>
+                <div class="box">
+                    
+                    <button class="btn" onclick="addFunction(1650)">ADD TO CART</button>
+                    <span class="price">1650฿</span>
+                    <button class="btn" onclick="addFunction(-1650)">Remove</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="img"><img src="6.jpeg" alt=""></div>
+                <div class="desc">แปรงสีฟันไฟฟ้า</div>
+                <div class="title">Philips แปรงสีฟันไฟฟ้า </div>
+                <div class="box">
+                    
+                    <button class="btn" onclick="addFunction(780)">ADD TO CART</button>
+                    <span class="price">780฿</span>
+                    <button class="btn" onclick="addFunction(-780)">Remove</button>
+                </div>
+            </div>
+            
+
+            
+            
+            
+        </div>
+        
+        <div class="ab"><h3>ยอดรวมราคาสิ้นค้า</h3></div>
+        <p id="result" class="total-price">0฿</p>
+
+        
+        
+            
+            
+    </section>
+ <!--conact-->           
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>สถานที่จัดส่ง </span></h1>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="หมายเลขโทรศัพท์">
+                <input type="text" placeholder="ที่อยู่">
+            </div>
+
+            <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+            <button type="button" onclick="myFunction()">submit</button>
+
+        </form>
+
+
+    </section>
+
+    
+    
+    
+    
+
+      
+  
+
+
+</body>
+</html>
